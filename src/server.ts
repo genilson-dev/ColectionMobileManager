@@ -8,9 +8,9 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
-
+const jwtSecret = "DScuc"
 app.get("/teste", (req, res) => {
-  res.send("Hello World!, this is a test route.");
+  res.send(`Esse foi o resultado obtido  ${jwtSecret}`);
 });
 
 app.listen(PORT, () => {
