@@ -1,4 +1,5 @@
 import { Request } from "express";
+
 export interface IUSer{
     id:string;
     email: string;
@@ -20,4 +21,13 @@ export interface IUSerUpdate{
 export interface IUserLogin{
     email: string;
     password: string;
+}
+
+export interface IUserResponse{
+    id:string;
+    email: string;
+    name: string;
+    createdAt: Date;
+    updatedAt: Date;
+
 }
